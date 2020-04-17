@@ -5,12 +5,12 @@
     <title>WEB222 Store- Contact</title>
     <link rel="stylesheet" href="styl.css" />    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>    
-    <script src="../src/script.js"></script>
+    <script src="../script.js"></script>
   </head>
   <body>
     <header>
-     
-      <h1><img src="../src/images/newlogo.jpg" alt="Logo" style="width:450px; height:200px;" class= "toplogo"/>
+      <h1>
+        <img src="../images/newbanner.jpg" alt="Baner" style="width:1600px; height:200px; border: none; margin-left: -1px; max-width: 100% " class = "ban2"/>
       </h1>
 
       
@@ -27,8 +27,8 @@
         </span>
     
         <ul class="navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">About</a></li>
           <li><a href="#">Account</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><form>
@@ -73,6 +73,53 @@
         <a href="#">Beats Headphones</a>
       </div>
     
+      <br>
+      <form class="contactus" action="https://httpbin.org/post" method="POST">
+        <fieldset class ="field">
+          <legend class = "legend">Contact Us</legend>
+        First Name: <input class= "fn" name="fname" autofocus required placeholder="First Name"/> <br>
+        Last Name: <input class= "ln"  name="fname"  required placeholder="Last Name"> <br>
+        Email: <input type= "email" class= "em" name="email" required placeholder="name@emailadress.com"> <br>
+        Address: <input name="text" class= "ad" required/> <br>
+        City: <input type="text" class= "cty" list="cities" name="City" required /> <br>
+        <datalist id="cities">
+        <option value="Toronto">
+        <option value="Montreal">
+        <option value="Vancouver">
+        <option value="Ottawa">
+        <option value="Alberta">
+        </datalist> 
+        Telephone: <input type= "tel" class= "tele" name="Telephone" required pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Example: 123-347-5467"> <br>
+        Postal Code: <input type= "text" class= "pc" name="Postal" required pattern="^[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="Example: M5W 1E6"> <br>
+        <!--Check box-->
+        <p>Would you like to be phoned? </p>
+        <input type="checkbox" name="Yes" id="yes" value="2" checked/>Yes<br />
+        <input type="checkbox" name="No" id="no" value="3" >No<br>
+        
+     <!--Radio button-->
+     <p>Reason for Contacting</p>
+   <ul>
+        <li><input type="radio" name="reason" id="reason1" value="Question"  />Question</li>
+        <li><input type="radio" name="reason" id="reason2" value="Comment" />Comment</li>
+        
+
+        <li><input type="radio" name="reason" id="reason3" value="Order Problem " />Order Problem
+        <ul>
+         <li> Order Number: <input type= "number" name="order num" placeholder="12345678" > </li>
+        </ul></li>
+        
+        </ul>
+        <p>Message Us</p> 
+    <p> <textarea name="message" id="message" cols="60" rows="6"></textarea></p>
+    <input type="hidden" name="hidden_Name" value="Demoy Swaby" />
+    <input type= "submit" class="submit-btn" value="Submit"> 
+  </fieldset>
+    </form>
+    <br>
+    
+
+
+    
     <!--    
 
     Part 2: Contact Us Page
@@ -111,7 +158,7 @@
   <footer>
     <div class = "footer-container">
       <div class= "left-footer">
-        <img src="../src/images/newlogo.jpg" alt = "" class= "logo">
+        <img src="../images/newlogo.jpg" alt = "" class= "logo">
         <div class ="social">
           <a href="#"> <i class ="fab fa-facebook-f"></i></a>
           <a href="#"> <i class ="fab fa-instagram"></i></a>

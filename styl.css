@@ -1,14 +1,11 @@
 /** Add any CSS you need to this file. */
 h1 {
     padding: 15px;
-    background-color: aqua;
     font-family: fantasy;
-    text-align: center;
     color: white;
     font-size: 60px;
-    background: url(../src/images/banner.jpg);
-    background-position: center;
     margin: 10px 0;
+    max-width: 100%;
       
   }
   h4{
@@ -17,19 +14,14 @@ h1 {
     text-align: center; 
   }
   h3{
+    margin: 20px 0;
     font-size: 50px;
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
   }
 
 
-  .toplogo{
-    width: 100%;
-    height: 300px;
-    margin: 5px;
-    padding: 5px;
-    border: none;
-  }
+ 
   
   
   body{
@@ -181,7 +173,7 @@ h1 {
   img{
     width: 100%;
     height: 300px;
-    margin: 5px;
+    margin: 20px;
     padding: 5px;
     border: 2px solid white;
   }
@@ -291,6 +283,60 @@ h1 {
   .news-btn:hover{
     opacity: .7;
   }
+
+  .submit-btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #465881;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+   margin-left: 20px;
+  cursor: pointer;
+    transition: opacity .3s linear;
+  }
+
+  .submit-btn:hover{
+    opacity: .7;
+  }
+.contactus{ 
+   width:500px; 
+   background:#c9d1d3; 
+   padding: 20px;
+   font-size: 20px;
+   margin: auto;
+   font-family: "Open Sans", sans-serif;
+   font-weight: bold;
+   
+   
+}
+.contactus .legend{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #465881;
+}
+
+.contactus .field{
+  border: solid 5px #465881;
+  color: #465881;
+}
+.contactus .em, .fn, .ln, .ab, .cty, .ad, .pc, .tele {
+  display:grid;    width:300px;  grid-template-columns: 0.3fr 1fr; grid-gap: 70px; border-radius: 0 10px 0 0;
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background:white;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
 
 @media screen and (max-width:960px){
   .footer-container{
