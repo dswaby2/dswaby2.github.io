@@ -6,8 +6,8 @@ h1 {
     text-align: center;
     color: white;
     font-size: 60px;
-    background: url(../images/banner.jpg);
-    background-position: center;
+    
+    
     margin: 10px 0;
       
   }
@@ -29,10 +29,10 @@ h1 {
     margin: 5px;
     padding: 5px;
     border: none;
-	  background-position: center;
+
   }
 .bannerr{
-	 background-position: right;
+	 background-position: center;
 }
   
   body{
