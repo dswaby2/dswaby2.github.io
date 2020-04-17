@@ -6,7 +6,8 @@ h1 {
     text-align: center;
     color: white;
     font-size: 60px;
-    
+     background: url(../images/banner.jpg);
+    background-position: center;
     
     margin: 10px 0;
       
@@ -31,9 +32,7 @@ h1 {
     border: none;
 
   }
-.bannerr{
-	 background-position: center;
-}
+
   
   body{
     font-family:"Arial", Serif;
