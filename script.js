@@ -28,6 +28,10 @@
           document.getElementById('heads-menu').style.width = '400px';
           document.getElementById('main').style.marginLeft = '250px';
         }
+        function watch(){
+          document.getElementById('watch-menu').style.width = '400px';
+          document.getElementById('main').style.marginLeft = '250px';
+        }
            
        //To back back buttons for sidebar categories
         function Lbackbutton(){
@@ -44,6 +48,10 @@
         }
         function Hbackbutton(){
           document.getElementById('heads-menu').style.width = '0';
+          document.getElementById('main').style.marginLeft = '250px';
+        }
+        function Wbackbutton(){
+          document.getElementById('watch-menu').style.width = '0';
           document.getElementById('main').style.marginLeft = '250px';
         }
 

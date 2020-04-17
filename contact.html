@@ -3,75 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <title>WEB222 Store- Contact</title>
-    <link rel="stylesheet" href="styl.css" />    
+    <link rel="stylesheet" href="style.css" />    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>    
     <script src="../script.js"></script>
   </head>
   <body>
     <header>
       <h1>
-        <img src="../images/newbanner.jpg" alt="Baner" style="width:1600px; height:200px; border: none; margin-left: -1px; max-width: 100% " class = "ban2"/>
-      </h1>
+        <!--Header which contains Logo and banner-->
+   <img src="../images/newbanner.jpg"  alt="Baner" style="width:1600px; height:200px; border: none; margin-left: -1px; max-width: 100% " class = "ban2"/>
+ </h1>
+ </header>
+      <!--Navigation Bar -->
+ <nav class="navbar">
+   <span class="open-slide">
+     <a href="#" onclick="openSlideMenu()">
+            <!--svg to create 3 lines for sidebar-->
+       <svg width="30" height="30">
+           <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+           <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+           <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+       </svg>
+     </a>
+   </span>
+    <!--Navbar links to different parts of website-->
+   <ul class="navbar-nav">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="contact.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li><form>
+       <input type = "text" placeholder="Search..."  >
+       </form> </li>
+   </ul>
+ </nav>
 
-      
-      </header>
-      <nav class="navbar">
-        <span class="open-slide">
-          <a href="#" onclick="openSlideMenu()">
-            <svg width="30" height="30">
-                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-            </svg>
-          </a>
-        </span>
-    
-        <ul class="navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">About</a></li>
-          <li><a href="#">Account</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><form>
-            <input type = "text" placeholder="Search..."  >
-            </form> </li>
-         
-        </ul>
-      </nav>
-    
-      <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a class ="cat"><b><u>Categories</u></b></a>
-        <a href="#" onclick="laptops()">Laptops</a>
-        <a href="#" onclick="phones()">Smart Phones</a>
-        <a href="#" onclick="tabs()">Tablets</a>
-        <a href="#" onclick="heads()">Headphones</a>
-      </div>
+    <!--side menu-->
+ <div id="side-menu" class="side-nav">
+   <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+   <a class ="cat"><b><u>Categories</u></b></a>
+   <a href="#" onclick="laptops()">Laptops</a>
+   <a href="#" onclick="phones()">Smart Phones</a>
+   <a href="#" onclick="tabs()">Tablets</a>
+   <a href="#" onclick="heads()">Headphones</a>
+ </div>
 
-      <div id="laptops-menu" class="side-nav">
-        <a href="#" class="btn-back" onclick="Lbackbutton()">&lescc;</a>
-        <a class ="cat"><b><u>Categories</u></b></a>
-        <a href="#">Apple MacBooks</a>
-        <a href="#">Windows Pcs</a>
-      </div>
+ <div id="laptops-menu" class="side-nav">
+   <a href="#" class="btn-back" onclick="Lbackbutton()">&lescc;</a>
+   <a class ="cat"><b><u>Categories</u></b></a>
+   <a href="#">Apple MacBooks</a>
+   <a href="#">Windows Pcs</a>
+ </div>
 
-      <div id="phones-menu" class="side-nav">
-        <a href="#" class="btn-back" onclick="Pbackbutton()">&lescc;</a>
-        <a class ="cat"><b><u>Categories</u></b></a>
-        <a href="#">Apple IPhones</a>
-        <a href="#">Samsung Devices</a>
-      </div>
+ <div id="phones-menu" class="side-nav">
+   <a href="#" class="btn-back" onclick="Pbackbutton()">&lescc;</a>
+   <a class ="cat"><b><u>Categories</u></b></a>
+   <a href="#">Apple IPhones</a>
+   <a href="#">Samsung Devices</a>
+ </div>
 
-      <div id="tabs-menu" class="side-nav">
-        <a href="#" class="btn-back" onclick="Tbackbutton()">&lescc;</a>
-        <a class ="cat"><b><u>Categories</u></b></a>
-        <a href="#">Apple Tablets</a>
-      </div>
+ <div id="tabs-menu" class="side-nav">
+   <a href="#" class="btn-back" onclick="Tbackbutton()">&lescc;</a>
+   <a class ="cat"><b><u>Categories</u></b></a>
+   <a href="#">Apple Tablets</a>
+ </div>
 
-      <div id="heads-menu" class="side-nav">
-        <a href="#" class="btn-back" onclick="Hbackbutton()">&lescc;</a>
-        <a class ="cat"><b><u>Categories</u></b></a>
-        <a href="#">Beats Headphones</a>
-      </div>
+ <div id="heads-menu" class="side-nav">
+   <a href="#" class="btn-back" onclick="Hbackbutton()">&lescc;</a>
+   <a class ="cat"><b><u>Categories</u></b></a>
+   <a href="#">Beats Headphones</a>
+ </div>
     
       <br>
       <form class="contactus" action="https://httpbin.org/post" method="POST">
@@ -117,33 +117,34 @@
     </form>
     <br>
     
- <footer>
+  
+
+  <footer>
     <div class = "footer-container">
       <div class= "left-footer">
         <img src="../images/newlogo.jpg" alt = "" class= "logo">
         <div class ="social">
-          <a href="#"> <i class ="fab fa-facebook-f"></i></a>
-          <a href="#"> <i class ="fab fa-instagram"></i></a>
-          <a href="#"> <i class ="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/"> <i class ="fab fa-facebook-f"></i></a><!--Tiny social media links-->
+          <a href="https://www.instagram.com/"> <i class ="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com/"> <i class ="fab fa-twitter"></i></a>
         </div>
         <p class= "rights">&copy; 2020 Designed By Demoy Swaby ID# 160259180</p>
       </div>
-
+  
       <div class= "right-footer">
         <div class= "news"><b>Our Newsletter</b></div>
-        
-          <div class= "news2"> Enter Your Email to Receieve Our Newsletter</div> 
+         <div class= "news2"> Enter Your Email to Receieve Our Newsletter</div>
           <br>
           <form action="https://formspree.io/myydanpg" method="POST" class= "news-form">
           <input type= "email" class="txt" name="_replyto" required placeholder="Enter Your Email">
           <input type= "submit" class="news-btn" value="Subscribe">
           </form>
-        
       </div>
     </div>
   </footer>
-</body>
-</html>
+  
+  </body>
+  </html>
 
     
     <!--    
@@ -181,4 +182,4 @@
     all data defined in the form above (e.g., visible and hidden fields).
 
   -->
- 
+
