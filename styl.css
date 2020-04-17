@@ -29,6 +29,7 @@ h1 {
     margin: 5px;
     padding: 5px;
     border: none;
+	  background-position: center;
   }
 .bannerr{
 	 background-position: right;
