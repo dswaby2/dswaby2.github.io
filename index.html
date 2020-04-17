@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="styl.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>    
+    <script src="../src/script.js"></script>
+  </head>
+  <body>
+    <header>
+     
+      <h1><img src="../src/images/newlogo.jpg" alt="Logo" style="width:450px; height:200px;" class= "toplogo"/>
+      </h1>
+
+      
+      </header>
+      <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+    
+        <ul class="navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><form>
+            <input type = "text" placeholder="Search..."  >
+            </form> </li>
+         
+        </ul>
+      </nav>
+    
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a class ="cat"><b><u>Categories</u></b></a>
+        <a href="#" onclick="laptops()">Laptops</a>
+        <a href="#" onclick="phones()">Smart Phones</a>
+        <a href="#" onclick="tabs()">Tablets</a>
+        <a href="#" onclick="heads()">Headphones</a>
+      </div>
+
+      <div id="laptops-menu" class="side-nav">
+        <a href="#" class="btn-back" onclick="Lbackbutton()">&lescc;</a>
+        <a class ="cat"><b><u>Categories</u></b></a>
+        <a href="#">Apple MacBooks</a>
+        <a href="#">Windows Pcs</a>
+      </div>
+
+      <div id="phones-menu" class="side-nav">
+        <a href="#" class="btn-back" onclick="Pbackbutton()">&lescc;</a>
+        <a class ="cat"><b><u>Categories</u></b></a>
+        <a href="#">Apple IPhones</a>
+        <a href="#">Samsung Devices</a>
+      </div>
+
+      <div id="tabs-menu" class="side-nav">
+        <a href="#" class="btn-back" onclick="Tbackbutton()">&lescc;</a>
+        <a class ="cat"><b><u>Categories</u></b></a>
+        <a href="#">Apple Tablets</a>
+      </div>
+
+      <div id="heads-menu" class="side-nav">
+        <a href="#" class="btn-back" onclick="Hbackbutton()">&lescc;</a>
+        <a class ="cat"><b><u>Categories</u></b></a>
+        <a href="#">Beats Headphones</a>
+      </div>
+    
+
+ 
+ <!--To push webpage to make space for sildebar-->
+ <div id="main">
+ 
+ <h3>Top Selling Products</h3> 
+
+      <div class="flex-container">
+      <div><img src="../src/images/MacBookPro.jpg" alt="">
+        <h4>Apple Macbook Pro 16-inch MQ032 <br> Intel
+          Core i9-990KS 16GB RAM DDR4 1TB
+          <button class="price"> $3499</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/MacBookAir.jpg" alt="">
+        <h4>Apple Macbook Air 13-inch MQD32LL <br> Intel
+          Core i5-5550U 8GB RAM DDR3 512GB
+         <br> <button class="price"> $1699</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/IpadPro2020.jpg" alt="">
+        <h4>Apple IPad Pro 2020 12.9-inch <br> A12Z Bionic chip 512GB
+         <br> <button class="price"> $1600</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/Ipadmini.jpg" alt="">
+        <h4>Apple IPad Mini <br> 7.9-inch A12 Bionic chip 256GB
+          <br> <button class="price"> $729</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/Iphone11.jpg" alt="">
+        <h4>Apple IPhone 11 Pro Max <br> 6.5-inch A13 Bionic chip 256GB 
+          <br> <button class="price"> $1729</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/AppleWatchSeries5.jpg" alt="">
+        <h4>Apple Watch Series 5 <br> Space Grey Aluminium Case with Sport Band
+          <br> <button class="price"> $529</button>
+        </h4>
+      </div>
+
+      <div><img src="../src/images/S20.jpg" alt="">
+        <h4>Samsung Galaxy S20 Ultra Plus 6.7-inch <br>SM-G985 Dual SIM 8GB RAM 512GB
+          <br> <button class="price"> $1800</button>
+        </h4>
+      </div>
+      <div><img src="../src/images/MicrosoftSurface.jpg" alt="">
+        <h4>Microsoft Surface Pro 7 12.3-inch Touch-Screen <br>Intel Core i5 8GB DDR2 128GB Solid State
+          <br> <button class="price"> $1329</button> 
+        </h4>
+        </div>
+      <div><img src="../src/images/AsusDuo.jpg" alt="">
+        <h4>Asus ZenBook Pro Duo UX581GV-XB74T 15.6-inch <br> Intel Core i7-9750H 16GB RAM 1TB PCIe SSD
+          <br> <button class="price"> $2400</button>
+        </h4>
+      </div>
+      <div><img src="../src/images/Beatsstudio3.jpg" alt="">
+      <h4>Beats Studio 3 Wireless Over-Ear Headphones - Blue
+        <br> <button class="price"> $249</button>
+      </h4>
+    </div>
+     
+    </div>
+
+    
+
+  </div>
+  <footer>
+    <div class = "footer-container">
+      <div class= "left-footer">
+        <img src="../src/images/newlogo.jpg" alt = "" class= "logo">
+        <div class ="social">
+          <a href="#"> <i class ="fab fa-facebook-f"></i></a>
+          <a href="#"> <i class ="fab fa-instagram"></i></a>
+          <a href="#"> <i class ="fab fa-twitter"></i></a>
+        </div>
+        <p class= "rights">&copy; 2020 Designed By Demoy Swaby ID# 160259180</p>
+      </div>
+
+      <div class= "right-footer">
+        <div class= "news"><b>Our Newsletter</b></div>
+        
+          <div class= "news2"> Enter Your Email to Receieve Our Newsletter</div>
+          <form action="https://formspree.io/myydanpg" method="POST" class= "news-form">
+          <input type= "email" class="txt" name="_replyto" required placeholder="Enter Your Email">
+          <input type= "submit" class="news-btn" value="Subscribe">
+          </form>
+        
+      </div>
+    </div>
+  </footer>
+
+
+    <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->
+  </body>
+</html>
